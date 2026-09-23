@@ -1,0 +1,1 @@
+springBootTest 帮我把这个项目进行改造，帮我连接前端注册页面fanren-login-vue ，本地有idea，有maven3，数据库层使用mybatis-puls，本地有mysql，用户名是root，密码是123456，自己建库建表。请根据注册页面的功能，完成后端功能
