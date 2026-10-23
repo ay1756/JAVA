@@ -1,0 +1,79 @@
+================================================================
+AI 项目备忘录 — 光遇登录（sky-login-vue）
+本文件给 AI 自己看，下次开口先读它，避免重复排查。
+最后更新：2026-10-23
+================================================================
+
+【一句话结论】
+项目代码完整可跑（前端 Vue3+Vite / 后端 SpringBoot+MySQL）。
+用户打不开的真正原因不是代码，而是：
+  1) 本机每次开机/重置会清掉 node_modules 和 target；
+  2) 用户双击 .bat 闪退 ——【真实主因=换行符】若窗口里每一行都报"不是内部或外部命令"(含 chcp/cd/echo)，
+     100% 是 .bat 用了纯 LF(\n) 换行，cmd 会吃掉每行首字符；必须 CRLF(\r\n)。详见下方【致命坑】。
+     （也可能叠加 .bat 文件关联被重置工具改坏，但先排查换行符。）
+  3) AI 在沙箱里拉起的服务，用户本机浏览器访问不到 localhost（网络不互通）。
+
+【机器重置规则（关键！）】
+会保留：.m2 Maven 仓库、WorkBuddy 托管的 Node 二进制、
+        JDK(Program Files\Java)、MySQL 及 MySQL84 服务、项目源码。
+会删除：node_modules、target（每次开机清空）。
+推论：脚本启动前绝不能依赖 node_modules/target，必须：
+      前端先 npm install，后端用 mvn clean 重建。
+
+【项目位置】
+根：D:\JAVA-main\JAVA-main\sky-login-vue\
+  springBootTest\  后端(SpringBoot, 端口 8081, 包名 com.fenglin.springboottest)
+    pom.xml / src / sql/ (init_safe.sql, sky_login.sql) / mvnw
+  sky-login-vue\    前端(Vue3+Vite, 端口 5173)
+    package.json(dev=vite) / vite.config.js / src / server.cjs(发布用静态服务器)
+  scripts\          start-all / start-backend / start-frontend / stop-all (.bat, GBK 编码, 相对路径)
+  AI_CONTEXT.txt    本文件
+
+【工具的真实位置（用 %USERPROFILE% 探测，不要写死绝对路径）】
+Maven : %USERPROFILE%\.m2\wrapper\dists\apache-maven-3.9.*\*\bin\mvn.cmd
+Node  : %USERPROFILE%\.workbuddy\binaries\node\versions\*\npm.cmd
+JDK   : C:\Program Files\Java\jdk-*
+MySQL : C:\Program Files\MySQL\MySQL Server*\bin\mysql.exe
+服务名: MySQL84（启动命令 net start MySQL84）
+数据库: sky_login  账号 root / 123456
+        测试账号 admin/123456、traveler/123456（由 sql/init_safe.sql 幂等初始化）
+
+【已验证可用的启动命令（沙箱内实测过）】
+后端(后台):
+  cd springBootTest
+  "<maven>\mvn.cmd" -o spring-boot:run    (用 -o 因 .m2 已缓存)
+前端(后台):
+  cd sky-login-vue
+  "<node>\npm.cmd" install && "<node>\npm.cmd" run dev
+登录接口实测：POST http://localhost:8081/api/user/login {admin,123456} -> 200
+
+【脚本设计要点】
+- 全部 GBK 编码、无 BOM、且必须是 CRLF(\r\n) 换行（否则 cmd 解析首行即崩）。
+- 项目内用 %~dp0..\xxx 相对路径；工具用 dir /s /b + %USERPROFILE% 通配探测。
+- start-all 用 start "标题" cmd /K 子脚本，各开独立窗口；子脚本末尾 pause 防闪退。
+- stop-all 先按窗口标题 taskkill，再按端口 8081/5173 清残留。
+
+【致命坑：.bat 必须 CRLF，不是 LF】
+- 现象：双击运行后，窗口里每一行都报"XXX 不是内部或外部命令"（chcp/title/cd/set/echo 全中招）。
+- 根因：.bat 文件用了纯 LF(\n) 换行。cmd 按 CRLF 解析，遇到 \n 会吃掉该行第一个字符，
+  于是 `chcp` -> `hcp`、`cd` -> `d`、`echo` -> `cho` 全部"命令不存在"。
+- 怎么造出来的：用 Write 工具写 UTF-8，再 Python 转 GBK 的那条链会【保留 LF 不变】，
+  结果是"GBK 对了、换行却还是 LF"，肉眼看不出，cmd 直接全崩。
+- 修正方法（Python）：open 后 content.replace('\n','\r\n')，再以 GBK 无 BOM 写回；
+  写完后务必核验：用 Python 数 CRLF 行数 > 0 且 LF-only 行数 == 0，首字节是 '@'，无 BOM。
+- 校验脚本（已删，需要时照写）：
+  for f in files: b=open(f,'rb').read(); print(f, 'CRLF=',b.count(b'\r\n'),'LF=',b.count(b'\n')-b.count(b'\r\n'),'BOM=',b[:3]==b'\xef\xbb\xbf')
+
+【给用户的最快打开方式】
+方式A: 右键 scripts\start-all.bat -> 以管理员身份运行（要拉 MySQL84 服务）。
+方式B(100%稳, 绕过.bat): 开两个 cmd 窗口分别粘贴上面"已验证启动命令"。
+方式C: 前端已发布到线上(纯前端, 无登录后端):
+       https://f82f608fcb4b451f83d583b589d1df16.app.workbuddy.host
+       （沙箱不支持 Java/MySQL，故后端无法发布；线上版登录按钮不连库）
+
+【下次遇到"打不开"时，直接检查】
+1) netstat -ano | grep ":5173|:8081" 看服务是否真在跑（可能是上次被回收）。
+2) MySQL84 服务是否启动（net start 看列表）。
+3) 不要再把 localhost 链接给用户——沙箱服务用户够不着，让他用方式A/B在本机起。
+4) 若用户说 .bat 双击闪退：检查文件关联是否被重置，或让他用方式B。
+================================================================
