@@ -1,0 +1,76 @@
+2026-10-28 08:40:44 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarting 53:Starting SpringBootTestApplication using Java 17.0.12 with PID 2176 (C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest\target\classes started by Administrator in C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest)
+2026-10-28 08:40:44 DEBUG c.fenglin.springboottest.SpringBootTestApplication.logStarting 54:Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-10-28 08:40:44 INFO c.fenglin.springboottest.SpringBootTestApplication.logStartupProfileInfo 658:The following 1 profile is active: "dev"
+2026-10-28 08:40:44 INFO o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor.logTo 252:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-28 08:40:44 INFO o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor.logTo 252:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-28 08:40:45 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize 111:Tomcat initialized with port 8081 (http)
+2026-10-28 08:40:45 INFO org.apache.catalina.core.StandardService.log 168:Starting service [Tomcat]
+2026-10-28 08:40:45 INFO org.apache.catalina.core.StandardEngine.log 168:Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-10-28 08:40:45 INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log 168:Initializing Spring embedded WebApplicationContext
+2026-10-28 08:40:45 INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext 301:Root WebApplicationContext: initialization completed in 821 ms
+2026-10-28 08:40:45 INFO o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init> 59:Adding welcome page: class path resource [static/index.html]
+2026-10-28 08:40:45 INFO o.s.b.d.autoconfigure.OptionalLiveReloadServer.startServer 59:LiveReload server is running on port 35729
+2026-10-28 08:40:45 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.start 243:Tomcat started on port 8081 (http) with context path '/'
+2026-10-28 08:40:45 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarted 59:Started SpringBootTestApplication in 1.755 seconds (process running for 2.011)
+2026-10-28 08:53:53 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent 211:Restarting due to 17 class path changes (0 additions, 13 deletions, 4 modifications)
+2026-10-28 08:53:53 INFO o.s.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully 54:Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-28 08:53:53 INFO o.s.boot.web.embedded.tomcat.GracefulShutdown.doShutdown 76:Graceful shutdown complete
+2026-10-28 08:53:54 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarting 53:Starting SpringBootTestApplication using Java 17.0.12 with PID 2176 (C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest\target\classes started by Administrator in C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest)
+2026-10-28 08:53:54 DEBUG c.fenglin.springboottest.SpringBootTestApplication.logStarting 54:Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-10-28 08:53:54 INFO c.fenglin.springboottest.SpringBootTestApplication.logStartupProfileInfo 658:The following 1 profile is active: "dev"
+2026-10-28 08:53:54 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize 111:Tomcat initialized with port 8081 (http)
+2026-10-28 08:53:54 INFO org.apache.catalina.core.StandardService.log 168:Starting service [Tomcat]
+2026-10-28 08:53:54 INFO org.apache.catalina.core.StandardEngine.log 168:Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-10-28 08:53:54 INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log 168:Initializing Spring embedded WebApplicationContext
+2026-10-28 08:53:54 INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext 301:Root WebApplicationContext: initialization completed in 476 ms
+2026-10-28 08:53:54 INFO o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init> 59:Adding welcome page: class path resource [static/index.html]
+2026-10-28 08:53:54 INFO o.s.b.d.autoconfigure.OptionalLiveReloadServer.startServer 59:LiveReload server is running on port 35729
+2026-10-28 08:53:54 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.start 243:Tomcat started on port 8081 (http) with context path '/'
+2026-10-28 08:53:54 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarted 59:Started SpringBootTestApplication in 0.918 seconds (process running for 790.944)
+2026-10-28 08:53:54 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent 63:Condition evaluation unchanged
+2026-10-28 08:53:55 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarting 53:Starting SpringBootTestApplication using Java 17.0.12 with PID 2416 (C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest\target\classes started by Administrator in C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest)
+2026-10-28 08:53:55 DEBUG c.fenglin.springboottest.SpringBootTestApplication.logStarting 54:Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-10-28 08:53:55 INFO c.fenglin.springboottest.SpringBootTestApplication.logStartupProfileInfo 658:The following 1 profile is active: "dev"
+2026-10-28 08:53:55 INFO o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor.logTo 252:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-28 08:53:55 INFO o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor.logTo 252:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-28 08:53:56 INFO o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener.onApplicationEvent 211:Restarting due to 13 class path changes (13 additions, 0 deletions, 0 modifications)
+2026-10-28 08:53:56 INFO o.s.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully 54:Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-28 08:53:56 INFO o.s.boot.web.embedded.tomcat.GracefulShutdown.doShutdown 76:Graceful shutdown complete
+2026-10-28 08:53:56 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarting 53:Starting SpringBootTestApplication using Java 17.0.12 with PID 2176 (C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest\target\classes started by Administrator in C:\Users\Administrator\Desktop\JAVA-main\sky-login-vue\springBootTest)
+2026-10-28 08:53:56 DEBUG c.fenglin.springboottest.SpringBootTestApplication.logStarting 54:Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-10-28 08:53:56 INFO c.fenglin.springboottest.SpringBootTestApplication.logStartupProfileInfo 658:The following 1 profile is active: "dev"
+2026-10-28 08:53:56 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize 111:Tomcat initialized with port 8081 (http)
+2026-10-28 08:53:56 INFO org.apache.catalina.core.StandardService.log 168:Starting service [Tomcat]
+2026-10-28 08:53:56 INFO org.apache.catalina.core.StandardEngine.log 168:Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-10-28 08:53:56 INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log 168:Initializing Spring embedded WebApplicationContext
+2026-10-28 08:53:56 INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext 301:Root WebApplicationContext: initialization completed in 162 ms
+2026-10-28 08:53:56 INFO o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init> 59:Adding welcome page: class path resource [static/index.html]
+2026-10-28 08:53:56 INFO o.s.b.d.autoconfigure.OptionalLiveReloadServer.startServer 59:LiveReload server is running on port 35729
+2026-10-28 08:53:56 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.start 243:Tomcat started on port 8081 (http) with context path '/'
+2026-10-28 08:53:56 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarted 59:Started SpringBootTestApplication in 0.355 seconds (process running for 792.892)
+2026-10-28 08:53:56 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent 63:Condition evaluation unchanged
+2026-10-28 08:53:57 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize 111:Tomcat initialized with port 8081 (http)
+2026-10-28 08:53:57 INFO org.apache.catalina.core.StandardService.log 168:Starting service [Tomcat]
+2026-10-28 08:53:57 INFO org.apache.catalina.core.StandardEngine.log 168:Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-10-28 08:53:57 INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log 168:Initializing Spring embedded WebApplicationContext
+2026-10-28 08:53:57 INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext 301:Root WebApplicationContext: initialization completed in 1635 ms
+2026-10-28 08:53:57 INFO o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init> 59:Adding welcome page: class path resource [static/index.html]
+2026-10-28 08:53:57 WARN o.s.b.d.autoconfigure.OptionalLiveReloadServer.startServer 62:Unable to start LiveReload server
+2026-10-28 08:53:57 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.refresh 635:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-10-28 08:53:57 INFO o.s.b.a.logging.ConditionEvaluationReportLogger.logMessage 82:
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-28 08:53:58 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter.report 40:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+

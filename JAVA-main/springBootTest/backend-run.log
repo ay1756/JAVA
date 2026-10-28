@@ -1,0 +1,204 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.fenglin:springBootTest >---------------------
+[INFO] Building springBootTest 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ springBootTest ---
+[INFO] Deleting D:\JAVA-main\JAVA-main\sky-login-vue\springBootTest\target
+[INFO] 
+[INFO] >>> spring-boot:3.4.5:run (default-cli) > test-compile @ springBootTest >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ springBootTest ---
+[INFO] Copying 4 resources from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ springBootTest ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 12 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ springBootTest ---
+[INFO] skip non existing resourceDirectory D:\JAVA-main\JAVA-main\sky-login-vue\springBootTest\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ springBootTest ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.4.5:run (default-cli) < test-compile @ springBootTest <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.5:run (default-cli) @ springBootTest ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2026-10-21 12:38:06 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarting 53:Starting SpringBootTestApplication using Java 17.0.12 with PID 24880 (D:\JAVA-main\JAVA-main\sky-login-vue\springBootTest\target\classes started by Administrator in D:\JAVA-main\JAVA-main\sky-login-vue\springBootTest)
+2026-10-21 12:38:06 DEBUG c.fenglin.springboottest.SpringBootTestApplication.logStarting 54:Running with Spring Boot v3.4.5, Spring v6.2.6
+2026-10-21 12:38:06 INFO c.fenglin.springboottest.SpringBootTestApplication.logStartupProfileInfo 658:The following 1 profile is active: "dev"
+2026-10-21 12:38:06 INFO o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor.logTo 252:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-21 12:38:06 INFO o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor.logTo 252:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-21 12:38:08 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize 111:Tomcat initialized with port 8081 (http)
+2026-10-21 12:38:08 INFO org.apache.catalina.core.StandardService.log 168:Starting service [Tomcat]
+2026-10-21 12:38:08 INFO org.apache.catalina.core.StandardEngine.log 168:Starting Servlet engine: [Apache Tomcat/10.1.40]
+2026-10-21 12:38:08 INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log 168:Initializing Spring embedded WebApplicationContext
+2026-10-21 12:38:08 INFO o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext 301:Root WebApplicationContext: initialization completed in 1627 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Get /192.168.57.142 network interface 
+Get network interface info: name:wlan1 (Intel(R) Wi-Fi 6 AX200 160MHz)
+Initialization Sequence datacenterId:16 workerId:9
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.7 
+2026-10-21 12:38:08 INFO o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init> 59:Adding welcome page: class path resource [static/index.html]
+2026-10-21 12:38:09 INFO o.s.b.d.autoconfigure.OptionalLiveReloadServer.startServer 59:LiveReload server is running on port 35729
+2026-10-21 12:38:09 INFO o.s.boot.web.embedded.tomcat.TomcatWebServer.start 243:Tomcat started on port 8081 (http) with context path '/'
+2026-10-21 12:38:09 INFO c.fenglin.springboottest.SpringBootTestApplication.logStarted 59:Started SpringBootTestApplication in 3.246 seconds (process running for 3.735)
+2026-10-21 12:38:36 INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/].log 168:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-21 12:38:36 INFO org.springframework.web.servlet.DispatcherServlet.initServletBean 532:Initializing Servlet 'dispatcherServlet'
+2026-10-21 12:38:36 INFO org.springframework.web.servlet.DispatcherServlet.initServletBean 554:Completed initialization in 0 ms
+2026-10-21 12:43:06 INFO c.fenglin.springboottest.controller.UserController.register 43:注册请求：username=sky_new1, faction=光崽
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50eab6d0] was not registered for synchronization because synchronization is not active
+2026-10-21 12:43:06 INFO com.zaxxer.hikari.HikariDataSource.getConnection 109:HikariPool-1 - Starting...
+2026-10-21 12:43:06 INFO com.zaxxer.hikari.pool.HikariPool.checkFailFast 554:HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73b729f
+2026-10-21 12:43:06 INFO com.zaxxer.hikari.HikariDataSource.getConnection 122:HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@863883730 wrapping com.mysql.cj.jdbc.ConnectionImpl@73b729f] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM user WHERE deleted=0 AND (username = ?)
+==> Parameters: sky_new1(String)
+<==    Columns: total
+<==        Row: 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50eab6d0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@363bc87b] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@59798521 wrapping com.mysql.cj.jdbc.ConnectionImpl@73b729f] will not be managed by Spring
+==>  Preparing: INSERT INTO user ( username, password, faction, create_time, update_time, deleted ) VALUES ( ?, ?, ?, ?, ?, ? )
+==> Parameters: sky_new1(String), b96d803e034ee6a42f77f77d33405a99(String), 光崽(String), 2026-10-21T12:43:06.988935700(LocalDateTime), 2026-10-21T12:43:06.989926(LocalDateTime), 0(Integer)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@363bc87b]
+2026-10-21 12:43:07 INFO c.f.springboottest.service.impl.UserServiceImpl.register 63:用户注册成功：sky_new1，阵营：光崽
+2026-10-21 12:43:07 INFO c.fenglin.springboottest.controller.UserController.login 33:登录请求：username=admin
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@753be73a] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@615123178 wrapping com.mysql.cj.jdbc.ConnectionImpl@73b729f] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,faction,create_time,update_time,deleted FROM user WHERE deleted=0 AND (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, faction, create_time, update_time, deleted
+<==        Row: 1, admin, fc46d036e81f8f89d8d8785e455abda3, null, 2026-10-21 11:45:22, 2026-10-21 11:45:22, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@753be73a]
+2026-10-21 12:43:07 INFO c.f.springboottest.service.impl.UserServiceImpl.login 45:用户登录成功：admin
+2026-10-21 12:43:07 INFO c.fenglin.springboottest.controller.UserController.login 33:登录请求：username=admin
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bad4759] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@896187996 wrapping com.mysql.cj.jdbc.ConnectionImpl@73b729f] will not be managed by Spring
+==>  Preparing: SELECT id,username,password,faction,create_time,update_time,deleted FROM user WHERE deleted=0 AND (username = ?)
+==> Parameters: admin(String)
+<==    Columns: id, username, password, faction, create_time, update_time, deleted
+<==        Row: 1, admin, fc46d036e81f8f89d8d8785e455abda3, null, 2026-10-21 11:45:22, 2026-10-21 11:45:22, 0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bad4759]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7457b467] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1573206139 wrapping com.mysql.cj.jdbc.ConnectionImpl@73b729f] will not be managed by Spring
+==>  Preparing: UPDATE user SET username=?, password=?, faction=?, create_time=?, update_time=? WHERE id=? AND deleted=0
+==> Parameters: admin(String), fc46d036e81f8f89d8d8785e455abda3(String), 先祖(String), 2026-10-21T11:45:22(LocalDateTime), 2026-10-21T11:45:22(LocalDateTime), 1(Long)
+<==    Updates: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7457b467]
+2026-10-21 12:43:07 INFO c.f.springboottest.service.impl.UserServiceImpl.login 45:用户登录成功：admin
+2026-10-21 12:43:07 INFO c.fenglin.springboottest.controller.UserController.register 43:注册请求：username=sky_new1, faction=光崽
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17aa2672] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@426625783 wrapping com.mysql.cj.jdbc.ConnectionImpl@73b729f] will not be managed by Spring
+==>  Preparing: SELECT COUNT( * ) AS total FROM user WHERE deleted=0 AND (username = ?)
+==> Parameters: sky_new1(String)
+<==    Columns: total
+<==        Row: 1
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@17aa2672]
+2026-10-21 12:43:07 ERROR c.f.springboottest.common.GlobalExceptionHandler.handleRuntime 19:业务异常：用户名已被注册
+java.lang.RuntimeException: 用户名已被注册
+	at com.fenglin.springboottest.service.impl.UserServiceImpl.register(UserServiceImpl.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.fenglin.springboottest.service.impl.UserServiceImpl$$SpringCGLIB$$0.register(<generated>)
+	at com.fenglin.springboottest.controller.UserController.register(UserController.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-10-21 12:43:07 WARN o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver.logException 254:Resolved [java.lang.RuntimeException: 用户名已被注册]
+2026-10-21 17:43:43 WARN com.zaxxer.hikari.pool.HikariPool.run 797:HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h7m35s617ms187?s700ns).
+2026-10-21 20:59:51 WARN com.zaxxer.hikari.pool.HikariPool.run 797:HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h14m7s542ms269?s900ns).
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12:11 h
+[INFO] Finished at: 2026-10-22T00:49:19+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.5:run (default-cli) on project springBootTest: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
